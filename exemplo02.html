@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <title>Exemplo 02</title>
+    <style>
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li{
+        border: 1px solid blue;
+        background-color: lightblue;
+        padding: 0.1em;
+      } 
+      .desconstruced-pancake{
+        display:flex;
+        flex-wrap: wrap;
+      }
+
+      .desconstruced-pancake > *{
+        /* flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 100px; */
+        flex: 1 1 100px;
+      }
+        
+    </style>
 </head>
 <body>
     <main>
         <article>
-            <h1>Exemplo 02</h1>
+            <h1>Exemplo 02: Desconstructed Pancake</h1> 
+            <ul class="desconstruced-pancake">
+                <li>Primeiro</li>
+                <li>Segundo</li>
+                <li>Terceiro</li>
+                <li>Quarto</li>
+                <li>Quinto</li>
+            </ul>
         </article>
     </main>
     
